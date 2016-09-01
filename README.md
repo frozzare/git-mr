@@ -20,7 +20,7 @@ GITLAB_TOKEN=xxx
 ```
 
 ```
-git mr -s=source -t=develop -m='test' -p=example/web
+git mr -s=source -t=develop -m='Merge request title' -p=example/web
 ```
 
 ## License
