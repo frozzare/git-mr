@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/plouc/go-gitlab-client"
+	"github.com/frozzare/go-gitlab-client"
 	"github.com/urfave/cli"
 )
 
