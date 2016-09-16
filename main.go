@@ -20,7 +20,6 @@ var (
 )
 
 func main() {
-
 	app := cli.NewApp()
 	app.Name = "Git Merge Request"
 	app.Usage = "Simple command line to do merge request to GitLab"
@@ -87,8 +86,7 @@ func run(c *cli.Context) error {
 	}
 
 	if len(title) == 0 {
-		fmt.Println("Title is not specified")
-		return nil
+		title = source
 	}
 
 	if len(project) == 0 {
