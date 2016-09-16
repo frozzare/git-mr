@@ -1,0 +1,5 @@
+package: github.com/frozzare/git-mr
+import:
+- package: github.com/frozzare/go-gitlab-client
+- package: github.com/urfave/cli
+  version: ~1.18.1
