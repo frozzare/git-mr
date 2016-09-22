@@ -122,7 +122,7 @@ func run(c *cli.Context) error {
 		return nil
 	}
 
-	_, err = lab.AddMergeRequest(&gogitlab.AddMergeRequestRequest{
+	mr, err := lab.AddMergeRequest(&gogitlab.AddMergeRequestRequest{
 		Description:     description,
 		SourceBranch:    source,
 		TargetBranch:    target,
@@ -135,6 +135,6 @@ func run(c *cli.Context) error {
 		return nil
 	}
 
-	fmt.Println("Done!")
+	fmt.Println(fmt.Sprintf("%s/%s/merge_requests/%d", url, project, mr.Iid))
 	return nil
 }
