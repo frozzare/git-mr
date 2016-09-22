@@ -135,6 +135,6 @@ func run(c *cli.Context) error {
 		return nil
 	}
 
-	fmt.Println(fmt.Sprintf("%s/%s/merge_requests/%d", url, project, mr.Iid))
+	fmt.Println(fmt.Sprintf("Done! %s/%s/merge_requests/%d", url, project, mr.Iid))
 	return nil
 }
